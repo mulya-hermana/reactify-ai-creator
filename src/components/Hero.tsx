@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, MessageCircle } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
@@ -39,11 +39,10 @@ const Hero = () => {
             asChild
           >
             <a 
-              href="https://wa.me/6281804476548?text=Halo,%20saya%20tertarik%20dengan%20Reactify"
+              href="https://lynk.id/mulyadigital/jp10oxvkyqze"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MessageCircle className="w-5 h-5" />
               {t("hero.cta.start")}
             </a>
           </Button>

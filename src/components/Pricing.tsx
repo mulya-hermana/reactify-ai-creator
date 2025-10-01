@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, Shield, RefreshCw, MessageCircle } from "lucide-react";
+import { Check, Shield, RefreshCw } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Pricing = () => {
@@ -81,11 +81,10 @@ const Pricing = () => {
               asChild
             >
               <a 
-                href="https://wa.me/6281804476548?text=Halo,%20saya%20ingin%20aktivasi%20lisensi%20Reactify"
+                href="https://lynk.id/mulyadigital/jp10oxvkyqze"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="w-5 h-5" />
                 {t("pricing.cta")}
               </a>
             </Button>

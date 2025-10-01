@@ -115,12 +115,12 @@ const translations = {
     "pricing.feature.9": "Support via WhatsApp",
     "pricing.license.year": "Lisensi berlaku 1 tahun penuh",
     "pricing.license.support": "Gratis update & support",
-    "pricing.cta": "Aktivasi Sekarang via WhatsApp",
+    "pricing.cta": "Dapatkan Sekarang",
     
     // CTA
     "cta.title": "Jangan Buang Waktu Lagi Edit Manual",
     "cta.description": "Dengan Reactify, kamu bisa fokus bikin ide konten, biar urusan editing dikerjakan AI otomatis.",
-    "cta.button": "Chat via WhatsApp",
+    "cta.button": "Dapatkan Sekarang",
     "cta.contact": "atau hubungi:",
     "cta.stat.voices": "Suara AI",
     "cta.stat.faster": "Lebih Cepat",
@@ -397,12 +397,12 @@ const translations = {
     "pricing.feature.9": "WhatsApp support",
     "pricing.license.year": "License valid for 1 full year",
     "pricing.license.support": "Free updates & support",
-    "pricing.cta": "Activate Now via WhatsApp",
+    "pricing.cta": "Get Now",
     
     // CTA
     "cta.title": "Don't Waste Time on Manual Editing",
     "cta.description": "With Reactify, focus on creating content ideas while AI handles the editing automatically.",
-    "cta.button": "Chat via WhatsApp",
+    "cta.button": "Get Now",
     "cta.contact": "or contact:",
     "cta.stat.voices": "AI Voices",
     "cta.stat.faster": "Faster",
