@@ -1,35 +1,38 @@
 import { Users, TrendingUp, Briefcase, Sparkles } from "lucide-react";
-
-const audiences = [
-  {
-    icon: Users,
-    title: "YouTuber & TikToker",
-    description: "Konten reaksi cepat jadi & siap viral"
-  },
-  {
-    icon: TrendingUp,
-    title: "Content Creator Meme",
-    description: "Editing instan untuk short video"
-  },
-  {
-    icon: Briefcase,
-    title: "Brand & Influencer",
-    description: "Tambah watermark & branding otomatis"
-  },
-  {
-    icon: Sparkles,
-    title: "Agency/Freelancer",
-    description: "Proses banyak video untuk klien"
-  }
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const TargetAudience = () => {
+  const { t } = useLanguage();
+  
+  const audiences = [
+    {
+      icon: Users,
+      title: t("audience.1.title"),
+      description: t("audience.1.desc")
+    },
+    {
+      icon: TrendingUp,
+      title: t("audience.2.title"),
+      description: t("audience.2.desc")
+    },
+    {
+      icon: Briefcase,
+      title: t("audience.3.title"),
+      description: t("audience.3.desc")
+    },
+    {
+      icon: Sparkles,
+      title: t("audience.4.title"),
+      description: t("audience.4.desc")
+    }
+  ];
+
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Siapa yang Cocok <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Pakai Reactify?</span>
+            {t("audience.title")} <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("audience.title.highlight")}</span>
           </h2>
         </div>
         

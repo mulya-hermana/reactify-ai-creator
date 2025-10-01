@@ -1,36 +1,39 @@
 import { Upload, Settings, Rocket } from "lucide-react";
-
-const steps = [
-  {
-    icon: Upload,
-    number: "01",
-    title: "Pilih Video",
-    description: "Upload atau pilih video yang ingin diproses"
-  },
-  {
-    icon: Settings,
-    number: "02",
-    title: "Atur Preferensi",
-    description: "Setting narasi, subtitle, musik, watermark, dan overlay"
-  },
-  {
-    icon: Rocket,
-    number: "03",
-    title: "Generate & Done",
-    description: "Klik generate, tunggu sebentar, video reaksi siap upload!"
-  }
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HowItWorks = () => {
+  const { t } = useLanguage();
+  
+  const steps = [
+    {
+      icon: Upload,
+      number: "01",
+      title: t("howitworks.step1.title"),
+      description: t("howitworks.step1.desc")
+    },
+    {
+      icon: Settings,
+      number: "02",
+      title: t("howitworks.step2.title"),
+      description: t("howitworks.step2.desc")
+    },
+    {
+      icon: Rocket,
+      number: "03",
+      title: t("howitworks.step3.title"),
+      description: t("howitworks.step3.desc")
+    }
+  ];
+
   return (
     <section className="py-20 px-4 bg-card/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Cara Kerja <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Reactify</span>
+            {t("howitworks.title")} <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("howitworks.title.highlight")}</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Hanya 3 langkah sederhana untuk video reaksi profesional
+            {t("howitworks.description")}
           </p>
         </div>
         

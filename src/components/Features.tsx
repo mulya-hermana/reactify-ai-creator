@@ -1,66 +1,69 @@
 import { Mic, MessageSquare, Music, Droplet, Video, Brain, Zap, Palette } from "lucide-react";
-
-const features = [
-  {
-    icon: Mic,
-    title: "Narasi AI Otomatis",
-    description: "30+ pilihan suara Gemini TTS dengan berbagai gaya: lucu, dramatis, investigatif, edukatif, dan lainnya.",
-    gradient: "from-primary to-primary/50"
-  },
-  {
-    icon: MessageSquare,
-    title: "Auto Subtitle",
-    description: "Generate subtitle otomatis dengan Whisper AI. Mendukung banyak bahasa dan customizable styling.",
-    gradient: "from-accent to-accent/50"
-  },
-  {
-    icon: Music,
-    title: "Musik Latar & Custom Audio",
-    description: "Tambahkan background music agar video lebih hidup. Atur volume dan gunakan audio eksternal.",
-    gradient: "from-primary to-primary/50"
-  },
-  {
-    icon: Droplet,
-    title: "Watermark & Branding",
-    description: "Lindungi video dengan watermark teks atau logo. Atur posisi, ukuran, dan opacity sesuai kebutuhan.",
-    gradient: "from-accent to-accent/50"
-  },
-  {
-    icon: Video,
-    title: "Video Overlay",
-    description: "Tambahkan video overlay manual untuk reaction. Mode split atau corner dengan auto overlay.",
-    gradient: "from-primary to-primary/50"
-  },
-  {
-    icon: Brain,
-    title: "AI Judul Otomatis",
-    description: "Generate judul video catchy & SEO-friendly secara otomatis untuk maksimalkan views.",
-    gradient: "from-accent to-accent/50"
-  },
-  {
-    icon: Zap,
-    title: "Bulk Processing",
-    description: "Proses banyak video sekaligus dalam satu folder. Hemat waktu untuk produksi massal.",
-    gradient: "from-primary to-primary/50"
-  },
-  {
-    icon: Palette,
-    title: "Tampilan Modern",
-    description: "UI modern dengan Dark/Light Mode. Navigasi mudah dengan tab Log, Info Video, Script & Settings.",
-    gradient: "from-accent to-accent/50"
-  }
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Features = () => {
+  const { t } = useLanguage();
+  
+  const features = [
+    {
+      icon: Mic,
+      title: t("features.narration.title"),
+      description: t("features.narration.desc"),
+      gradient: "from-primary to-primary/50"
+    },
+    {
+      icon: MessageSquare,
+      title: t("features.subtitle.title"),
+      description: t("features.subtitle.desc"),
+      gradient: "from-accent to-accent/50"
+    },
+    {
+      icon: Music,
+      title: t("features.music.title"),
+      description: t("features.music.desc"),
+      gradient: "from-primary to-primary/50"
+    },
+    {
+      icon: Droplet,
+      title: t("features.watermark.title"),
+      description: t("features.watermark.desc"),
+      gradient: "from-accent to-accent/50"
+    },
+    {
+      icon: Video,
+      title: t("features.overlay.title"),
+      description: t("features.overlay.desc"),
+      gradient: "from-primary to-primary/50"
+    },
+    {
+      icon: Brain,
+      title: t("features.ai.title"),
+      description: t("features.ai.desc"),
+      gradient: "from-accent to-accent/50"
+    },
+    {
+      icon: Zap,
+      title: t("features.bulk.title"),
+      description: t("features.bulk.desc"),
+      gradient: "from-primary to-primary/50"
+    },
+    {
+      icon: Palette,
+      title: t("features.ui.title"),
+      description: t("features.ui.desc"),
+      gradient: "from-accent to-accent/50"
+    }
+  ];
+
   return (
     <section id="fitur" className="py-20 px-4 bg-card/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Fitur <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Unggulan</span>
+            {t("features.title")} <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("features.title.highlight")}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Semua yang kamu butuhkan untuk bikin video reaksi profesional dan viral
+            {t("features.description")}
           </p>
         </div>
         

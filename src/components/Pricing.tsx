@@ -1,28 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Check, Shield, RefreshCw, MessageCircle } from "lucide-react";
-
-const features = [
-  "Semua fitur lengkap tanpa batasan",
-  "30+ suara AI Gemini TTS",
-  "Auto subtitle multi-bahasa",
-  "Bulk processing unlimited",
-  "Watermark & branding custom",
-  "Video overlay manual & auto",
-  "AI judul otomatis",
-  "Update versi terbaru gratis",
-  "Support via WhatsApp"
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Pricing = () => {
+  const { t } = useLanguage();
+  
+  const features = [
+    t("pricing.feature.1"),
+    t("pricing.feature.2"),
+    t("pricing.feature.3"),
+    t("pricing.feature.4"),
+    t("pricing.feature.5"),
+    t("pricing.feature.6"),
+    t("pricing.feature.7"),
+    t("pricing.feature.8"),
+    t("pricing.feature.9"),
+  ];
+
   return (
-    <section className="py-20 px-4">
+    <section id="harga" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Harga <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Spesial</span>
+            {t("pricing.title")} <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("pricing.title.highlight")}</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Investasi kecil untuk produktivitas besar
+            {t("pricing.description")}
           </p>
         </div>
         
@@ -34,7 +37,7 @@ const Pricing = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" />
-              Lisensi Resmi & Aman
+              {t("pricing.badge")}
             </div>
             
             {/* Price */}
@@ -43,9 +46,9 @@ const Pricing = () => {
                 <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Rp200.000
                 </span>
-                <span className="text-2xl text-muted-foreground">/ tahun</span>
+                <span className="text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
               </div>
-              <p className="text-muted-foreground">1 lisensi untuk 1 device</p>
+              <p className="text-muted-foreground">{t("pricing.license")}</p>
             </div>
             
             {/* Features */}
@@ -62,11 +65,11 @@ const Pricing = () => {
             <div className="bg-secondary/50 rounded-lg p-4 mb-8 space-y-2">
               <div className="flex items-center gap-2 text-sm">
                 <Shield className="w-4 h-4 text-primary" />
-                <span className="font-medium">Lisensi berlaku 1 tahun penuh</span>
+                <span className="font-medium">{t("pricing.license.year")}</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <RefreshCw className="w-4 h-4 text-primary" />
-                <span className="font-medium">Gratis update & support</span>
+                <span className="font-medium">{t("pricing.license.support")}</span>
               </div>
             </div>
             
@@ -83,7 +86,7 @@ const Pricing = () => {
                 rel="noopener noreferrer"
               >
                 <MessageCircle className="w-5 h-5" />
-                Aktivasi Sekarang via WhatsApp
+                {t("pricing.cta")}
               </a>
             </Button>
           </div>
