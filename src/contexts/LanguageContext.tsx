@@ -26,6 +26,12 @@ const translations = {
     "hero.stat.subtitle": "Auto Subtitle",
     "hero.stat.bulk": "Bulk Processing",
     
+    // Demo
+    "demo.badge": "Demo Video",
+    "demo.title": "Lihat Reactify Beraksi",
+    "demo.subtitle": "Tonton bagaimana Reactify mengubah video biasa menjadi konten reaksi viral dalam hitungan menit",
+    "demo.description": "Video demo menunjukkan seluruh proses dari memilih video hingga hasil akhir yang siap upload",
+    
     // Problem
     "problem.title": "Mengapa Harus",
     "problem.title.highlight": "Reactify?",
@@ -301,6 +307,12 @@ const translations = {
     "hero.stat.voices": "30+ AI Voices",
     "hero.stat.subtitle": "Auto Subtitle",
     "hero.stat.bulk": "Bulk Processing",
+    
+    // Demo
+    "demo.badge": "Demo Video",
+    "demo.title": "See Reactify in Action",
+    "demo.subtitle": "Watch how Reactify transforms regular videos into viral reaction content in minutes",
+    "demo.description": "The demo video shows the entire process from selecting a video to the final result ready to upload",
     
     // Problem
     "problem.title": "Why Choose",
