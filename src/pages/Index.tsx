@@ -14,6 +14,7 @@ import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 const Index = () => {
   return (
@@ -34,6 +35,7 @@ const Index = () => {
       <Pricing />
       <CTA />
       <Footer />
+      <WhatsAppWidget />
     </div>
   );
 };
