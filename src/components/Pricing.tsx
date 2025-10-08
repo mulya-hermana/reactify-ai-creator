@@ -38,43 +38,43 @@ const Pricing = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12">
           {/* Basic Package */}
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10" />
             
-            <div className="bg-card rounded-2xl p-8 border-2 border-primary/50 shadow-[0_0_50px_hsl(var(--primary)/0.2)] h-full flex flex-col">
+            <div className="bg-card rounded-2xl p-6 md:p-8 border-2 border-primary/50 shadow-[0_0_50px_hsl(var(--primary)/0.2)] h-full flex flex-col">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 w-fit">
                 <Shield className="w-4 h-4" />
                 {t("pricing.badge")}
               </div>
               
-              <div className="mb-8">
-                <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <div className="mb-6 md:mb-8">
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+                  <span className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Rp200.000
                   </span>
-                  <span className="text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
+                  <span className="text-xl md:text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
                 </div>
-                <p className="text-muted-foreground">{t("pricing.license")}</p>
+                <p className="text-sm md:text-base text-muted-foreground">{t("pricing.license")}</p>
               </div>
               
-              <div className="space-y-4 mb-8 flex-grow">
+              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{feature}</span>
+                    <Check className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm md:text-base text-foreground">{feature}</span>
                   </div>
                 ))}
               </div>
               
-              <div className="bg-secondary/50 rounded-lg p-4 mb-8 space-y-2">
-                <div className="flex items-center gap-2 text-sm">
-                  <Shield className="w-4 h-4 text-primary" />
+              <div className="bg-secondary/50 rounded-lg p-3 md:p-4 mb-6 md:mb-8 space-y-2">
+                <div className="flex items-center gap-2 text-xs md:text-sm">
+                  <Shield className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="font-medium">{t("pricing.license.year")}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <RefreshCw className="w-4 h-4 text-primary" />
+                <div className="flex items-center gap-2 text-xs md:text-sm">
+                  <RefreshCw className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="font-medium">{t("pricing.license.support")}</span>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Pricing = () => {
               <Button 
                 variant="cta" 
                 size="lg" 
-                className="w-full text-lg py-6 h-auto"
+                className="w-full text-base md:text-lg py-5 md:py-6 h-auto"
                 asChild
               >
                 <a 
@@ -100,33 +100,33 @@ const Pricing = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 blur-3xl -z-10" />
             
-            <div className="bg-card rounded-2xl p-8 border-2 border-accent/50 shadow-[0_0_50px_hsl(var(--accent)/0.2)] h-full flex flex-col">
+            <div className="bg-card rounded-2xl p-6 md:p-8 border-2 border-accent/50 shadow-[0_0_50px_hsl(var(--accent)/0.2)] h-full flex flex-col">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6 w-fit">
                 <Sparkles className="w-4 h-4" />
                 {t("pricing.bundle.badge")}
               </div>
               
-              <div className="mb-8">
-                <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+              <div className="mb-6 md:mb-8">
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
+                  <span className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
                     Rp250.000
                   </span>
-                  <span className="text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
+                  <span className="text-xl md:text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
                 </div>
-                <p className="text-muted-foreground">{t("pricing.bundle.description")}</p>
+                <p className="text-sm md:text-base text-muted-foreground">{t("pricing.bundle.description")}</p>
               </div>
               
-              <div className="space-y-4 mb-8 flex-grow">
+              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                 {bundleFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{feature}</span>
+                    <Check className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm md:text-base text-foreground">{feature}</span>
                   </div>
                 ))}
               </div>
               
-              <div className="bg-accent/10 rounded-lg p-4 mb-8 border border-accent/20">
-                <p className="text-sm font-medium text-center">
+              <div className="bg-accent/10 rounded-lg p-3 md:p-4 mb-6 md:mb-8 border border-accent/20">
+                <p className="text-xs md:text-sm font-medium text-center">
                   {t("pricing.bundle.voucher")}: <span className="text-accent font-bold">OKTOBER75</span>
                 </p>
               </div>
@@ -134,7 +134,7 @@ const Pricing = () => {
               <Button 
                 variant="cta" 
                 size="lg" 
-                className="w-full text-lg py-6 h-auto"
+                className="w-full text-base md:text-lg py-5 md:py-6 h-auto"
                 asChild
               >
                 <a 
@@ -150,13 +150,13 @@ const Pricing = () => {
         </div>
 
         {/* Consultation CTA */}
-        <div className="text-center">
-          <p className="text-xl mb-6 text-muted-foreground">
+        <div className="text-center px-4">
+          <p className="text-lg md:text-xl mb-4 md:mb-6 text-muted-foreground">
             {t("pricing.consultation.text")}
           </p>
           <Button 
             size="lg" 
-            className="text-lg py-6 h-auto gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-[0_0_30px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] transition-all duration-300 border-0"
+            className="w-full sm:w-auto text-base md:text-lg py-5 md:py-6 h-auto gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-[0_0_30px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] transition-all duration-300 border-0"
             asChild
           >
             <a 
