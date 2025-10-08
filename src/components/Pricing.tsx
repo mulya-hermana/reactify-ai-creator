@@ -155,9 +155,8 @@ const Pricing = () => {
             {t("pricing.consultation.text")}
           </p>
           <Button 
-            variant="outline" 
             size="lg" 
-            className="text-lg py-6 h-auto gap-2"
+            className="text-lg py-6 h-auto gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-[0_0_30px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] transition-all duration-300 border-0"
             asChild
           >
             <a 

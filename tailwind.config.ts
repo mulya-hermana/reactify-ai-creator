@@ -105,6 +105,14 @@ export default {
           "50%": {
             opacity: "1"
           }
+        },
+        "gradient": {
+          "0%, 100%": {
+            backgroundPosition: "0% 50%"
+          },
+          "50%": {
+            backgroundPosition: "100% 50%"
+          }
         }
       },
       animation: {
@@ -113,6 +121,7 @@ export default {
         "fade-in-up": "fade-in-up 0.6s ease-out",
         "fade-in": "fade-in 0.6s ease-out",
         "glow": "glow 3s ease-in-out infinite",
+        "gradient": "gradient 3s ease infinite",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
