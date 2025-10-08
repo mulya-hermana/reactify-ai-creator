@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, Shield, RefreshCw } from "lucide-react";
+import { Check, Shield, RefreshCw, Sparkles, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Pricing = () => {
@@ -17,9 +17,18 @@ const Pricing = () => {
     t("pricing.feature.9"),
   ];
 
+  const bundleFeatures = [
+    t("pricing.bundle.feature.1"),
+    t("pricing.bundle.feature.2"),
+    t("pricing.bundle.feature.3"),
+    t("pricing.bundle.feature.4"),
+    t("pricing.bundle.feature.5"),
+    t("pricing.bundle.feature.6"),
+  ];
+
   return (
     <section id="harga" className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             {t("pricing.title")} <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("pricing.title.highlight")}</span>
@@ -29,66 +38,137 @@ const Pricing = () => {
           </p>
         </div>
         
-        <div className="relative">
-          {/* Glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10" />
-          
-          <div className="bg-card rounded-2xl p-8 md:p-12 border-2 border-primary/50 shadow-[0_0_50px_hsl(var(--primary)/0.2)]">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              {t("pricing.badge")}
-            </div>
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Basic Package */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl -z-10" />
             
-            {/* Price */}
-            <div className="mb-8">
-              <div className="flex items-baseline gap-2 mb-2">
-                <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Rp200.000
-                </span>
-                <span className="text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
+            <div className="bg-card rounded-2xl p-8 border-2 border-primary/50 shadow-[0_0_50px_hsl(var(--primary)/0.2)] h-full flex flex-col">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 w-fit">
+                <Shield className="w-4 h-4" />
+                {t("pricing.badge")}
               </div>
-              <p className="text-muted-foreground">{t("pricing.license")}</p>
-            </div>
-            
-            {/* Features */}
-            <div className="space-y-4 mb-8">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">{feature}</span>
+              
+              <div className="mb-8">
+                <div className="flex items-baseline gap-2 mb-2">
+                  <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    Rp200.000
+                  </span>
+                  <span className="text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
                 </div>
-              ))}
-            </div>
-            
-            {/* License info */}
-            <div className="bg-secondary/50 rounded-lg p-4 mb-8 space-y-2">
-              <div className="flex items-center gap-2 text-sm">
-                <Shield className="w-4 h-4 text-primary" />
-                <span className="font-medium">{t("pricing.license.year")}</span>
+                <p className="text-muted-foreground">{t("pricing.license")}</p>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <RefreshCw className="w-4 h-4 text-primary" />
-                <span className="font-medium">{t("pricing.license.support")}</span>
+              
+              <div className="space-y-4 mb-8 flex-grow">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">{feature}</span>
+                  </div>
+                ))}
               </div>
-            </div>
-            
-            {/* CTA */}
-            <Button 
-              variant="cta" 
-              size="lg" 
-              className="w-full text-lg py-6 h-auto"
-              asChild
-            >
-              <a 
-                href="https://lynk.id/mulyadigital/jp10oxvkyqze"
-                target="_blank"
-                rel="noopener noreferrer"
+              
+              <div className="bg-secondary/50 rounded-lg p-4 mb-8 space-y-2">
+                <div className="flex items-center gap-2 text-sm">
+                  <Shield className="w-4 h-4 text-primary" />
+                  <span className="font-medium">{t("pricing.license.year")}</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <RefreshCw className="w-4 h-4 text-primary" />
+                  <span className="font-medium">{t("pricing.license.support")}</span>
+                </div>
+              </div>
+              
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="w-full text-lg py-6 h-auto"
+                asChild
               >
-                {t("pricing.cta")}
-              </a>
-            </Button>
+                <a 
+                  href="https://lynk.id/mulyadigital/jp10oxvkyqze"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("pricing.cta")}
+                </a>
+              </Button>
+            </div>
           </div>
+
+          {/* Bundle Package */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 blur-3xl -z-10" />
+            
+            <div className="bg-card rounded-2xl p-8 border-2 border-accent/50 shadow-[0_0_50px_hsl(var(--accent)/0.2)] h-full flex flex-col">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6 w-fit">
+                <Sparkles className="w-4 h-4" />
+                {t("pricing.bundle.badge")}
+              </div>
+              
+              <div className="mb-8">
+                <div className="flex items-baseline gap-2 mb-2">
+                  <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+                    Rp250.000
+                  </span>
+                  <span className="text-2xl text-muted-foreground">{t("pricing.per.year")}</span>
+                </div>
+                <p className="text-muted-foreground">{t("pricing.bundle.description")}</p>
+              </div>
+              
+              <div className="space-y-4 mb-8 flex-grow">
+                {bundleFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="bg-accent/10 rounded-lg p-4 mb-8 border border-accent/20">
+                <p className="text-sm font-medium text-center">
+                  {t("pricing.bundle.voucher")}: <span className="text-accent font-bold">OKTOBER75</span>
+                </p>
+              </div>
+              
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="w-full text-lg py-6 h-auto"
+                asChild
+              >
+                <a 
+                  href="https://lynk.id/mulyadigital/r1zm5wg3g1xw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("pricing.bundle.cta")}
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Consultation CTA */}
+        <div className="text-center">
+          <p className="text-xl mb-6 text-muted-foreground">
+            {t("pricing.consultation.text")}
+          </p>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-lg py-6 h-auto gap-2"
+            asChild
+          >
+            <a 
+              href="https://wa.me/6281804476548?text=Halo%2C%20saya%20tertarik%20dengan%20Reactify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="w-5 h-5" />
+              {t("pricing.consultation.button")}
+            </a>
+          </Button>
         </div>
       </div>
     </section>
