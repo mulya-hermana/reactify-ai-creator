@@ -12,7 +12,11 @@ const translations = {
   id: {
     // Navbar
     "nav.features": "Fitur",
+    "nav.how": "Cara Kerja",
+    "nav.testimonials": "Testimoni",
+    "nav.faq": "FAQ",
     "nav.pricing": "Harga",
+    "nav.cta": "Dapatkan Sekarang",
     "nav.contact": "Kontak",
     
     // Hero
@@ -306,7 +310,11 @@ const translations = {
   en: {
     // Navbar
     "nav.features": "Features",
+    "nav.how": "How It Works",
+    "nav.testimonials": "Testimonials",
+    "nav.faq": "FAQ",
     "nav.pricing": "Pricing",
+    "nav.cta": "Get Started",
     "nav.contact": "Contact",
     
     // Hero
