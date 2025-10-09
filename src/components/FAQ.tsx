@@ -53,7 +53,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-card/30">
+    <section id="faq" className="py-20 px-4 bg-card/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

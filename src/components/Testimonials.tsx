@@ -44,7 +44,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section id="testimoni" className="py-20 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
