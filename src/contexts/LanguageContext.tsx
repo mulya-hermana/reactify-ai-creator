@@ -36,6 +36,23 @@ const translations = {
     "demo.subtitle": "Tonton bagaimana Reactify mengubah video biasa menjadi konten reaksi viral dalam hitungan menit",
     "demo.description": "Video demo menunjukkan seluruh proses dari memilih video hingga hasil akhir yang siap upload",
     
+    // Problem Solution
+    "problemsolution.title": "Masalah yang Sering",
+    "problemsolution.title.highlight": "Content Creator Hadapi",
+    "problemsolution.description": "Kendala-kendala dalam membuat video reaksi dan bagaimana Reactify menjadi solusinya",
+    "problemsolution.time.problem": "Editing Memakan Waktu Lama",
+    "problemsolution.time.problem.desc": "Proses editing manual bisa memakan waktu 3-5 jam per video. Dari rekam narasi, sinkronisasi audio, tambah subtitle, sampai render final. Waktu berharga terbuang sia-sia.",
+    "problemsolution.time.solution": "Otomatis & Cepat",
+    "problemsolution.time.solution.desc": "Reactify mengotomasi semua proses editing. Hanya butuh 5-10 menit dari video mentah hingga siap upload. Hemat waktu hingga 90% untuk fokus ke konten berkualitas.",
+    "problemsolution.cost.problem": "Biaya Editor & Software Mahal",
+    "problemsolution.cost.problem.desc": "Hire editor professional bisa Rp500K-1Jt per video. Software editing premium seperti Adobe Premiere Pro juga butuh subscription bulanan yang mahal.",
+    "problemsolution.cost.solution": "Investasi Sekali, Pakai Setahun",
+    "problemsolution.cost.solution.desc": "Dengan Rp200K untuk setahun penuh, kamu bisa produksi unlimited video. ROI tercapai dari video pertama. Tidak perlu software mahal atau hire editor lagi.",
+    "problemsolution.quality.problem": "Kualitas Output Tidak Konsisten",
+    "problemsolution.quality.problem.desc": "Edit manual sering menghasilkan kualitas yang berbeda-beda. Subtitle tidak rapi, timing audio meleset, branding lupa ditambahkan. Tidak profesional.",
+    "problemsolution.quality.solution": "Kualitas Profesional & Konsisten",
+    "problemsolution.quality.solution.desc": "AI menghasilkan output yang konsisten setiap kali. Subtitle selalu rapi, audio sinkron sempurna, watermark otomatis terpasang. Hasil selalu HD dan profesional.",
+    
     // Problem
     "problem.title": "Mengapa Harus",
     "problem.title.highlight": "Reactify?",
@@ -333,6 +350,23 @@ const translations = {
     "demo.title": "See Reactify in Action",
     "demo.subtitle": "Watch how Reactify transforms regular videos into viral reaction content in minutes",
     "demo.description": "The demo video shows the entire process from selecting a video to the final result ready to upload",
+    
+    // Problem Solution
+    "problemsolution.title": "Common Problems",
+    "problemsolution.title.highlight": "Content Creators Face",
+    "problemsolution.description": "Challenges in creating reaction videos and how Reactify solves them",
+    "problemsolution.time.problem": "Editing Takes Too Long",
+    "problemsolution.time.problem.desc": "Manual editing can take 3-5 hours per video. From recording narration, syncing audio, adding subtitles, to final rendering. Valuable time wasted.",
+    "problemsolution.time.solution": "Automated & Fast",
+    "problemsolution.time.solution.desc": "Reactify automates the entire editing process. Only takes 5-10 minutes from raw video to upload-ready. Save up to 90% time to focus on quality content.",
+    "problemsolution.cost.problem": "Editor & Software Costs",
+    "problemsolution.cost.problem.desc": "Hiring professional editors can cost $30-60 per video. Premium editing software like Adobe Premiere Pro also requires expensive monthly subscriptions.",
+    "problemsolution.cost.solution": "One-Time Investment, Year-Long Use",
+    "problemsolution.cost.solution.desc": "For just $15 per year, produce unlimited videos. ROI achieved from the first video. No need for expensive software or hiring editors.",
+    "problemsolution.quality.problem": "Inconsistent Output Quality",
+    "problemsolution.quality.problem.desc": "Manual editing often produces varying quality. Messy subtitles, off-timed audio, forgotten branding. Not professional at all.",
+    "problemsolution.quality.solution": "Professional & Consistent Quality",
+    "problemsolution.quality.solution.desc": "AI produces consistent output every time. Subtitles always neat, audio perfectly synced, watermark automatically applied. Always HD and professional.",
     
     // Problem
     "problem.title": "Why Choose",
