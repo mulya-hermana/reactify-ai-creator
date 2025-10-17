@@ -24,7 +24,7 @@ const Demo = () => {
           <div className="aspect-video">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/h0Ru_lcF0MM?start=124"
+              src="https://www.youtube.com/embed/fGk0SJ9P0qg"
               title="Reactify Demo Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

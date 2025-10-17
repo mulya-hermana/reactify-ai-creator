@@ -1,4 +1,4 @@
-import { Mic, MessageSquare, Music, Droplet, Video, Brain, Zap, Palette } from "lucide-react";
+import { Mic, MessageSquare, Music, Droplet, Video, Brain, Zap, Palette, Save, Images, Combine } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Features = () => {
@@ -52,6 +52,24 @@ const Features = () => {
       title: t("features.ui.title"),
       description: t("features.ui.desc"),
       gradient: "from-accent to-accent/50"
+    },
+    {
+      icon: Save,
+      title: t("features.save.title"),
+      description: t("features.save.desc"),
+      gradient: "from-primary to-primary/50"
+    },
+    {
+      icon: Images,
+      title: t("features.bulkimage.title"),
+      description: t("features.bulkimage.desc"),
+      gradient: "from-accent to-accent/50"
+    },
+    {
+      icon: Combine,
+      title: t("features.merge.title"),
+      description: t("features.merge.desc"),
+      gradient: "from-primary to-primary/50"
     }
   ];
 

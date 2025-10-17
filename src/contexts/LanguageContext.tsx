@@ -36,6 +36,13 @@ const translations = {
     "demo.subtitle": "Tonton bagaimana Reactify mengubah video biasa menjadi konten reaksi viral dalam hitungan menit",
     "demo.description": "Video demo menunjukkan seluruh proses dari memilih video hingga hasil akhir yang siap upload",
     
+    // Results
+    "results.badge": "Contoh Hasil",
+    "results.title": "Lihat Hasilnya",
+    "results.subtitle": "Contoh nyata video yang dihasilkan dengan Reactify",
+    "results.description": "Lihat ratusan video reaksi profesional yang siap upload",
+    "results.cta": "Lihat Semua Contoh",
+    
     // Problem Solution
     "problemsolution.title": "Masalah yang Sering",
     "problemsolution.title.highlight": "Content Creator Hadapi",
@@ -94,6 +101,12 @@ const translations = {
     "features.bulk.desc": "Proses banyak video sekaligus dalam satu folder. Hemat waktu untuk produksi massal.",
     "features.ui.title": "Tampilan Modern",
     "features.ui.desc": "UI modern dengan Dark/Light Mode. Navigasi mudah dengan tab Log, Info Video, Script & Settings.",
+    "features.save.title": "Save Settingan",
+    "features.save.desc": "Simpan preferensi dan settingan untuk digunakan kembali. Tidak perlu setting ulang setiap kali.",
+    "features.bulkimage.title": "Bulk Image Generator",
+    "features.bulkimage.desc": "Generate ratusan gambar per hari untuk kebutuhan konten. Sempurna untuk konten massal.",
+    "features.merge.title": "Gabung Video & Foto",
+    "features.merge.desc": "Gabungkan video dengan foto, foto dengan video, dan foto dengan foto dengan mudah.",
     
     // Target Audience
     "audience.title": "Siapa yang Cocok",
@@ -351,6 +364,13 @@ const translations = {
     "demo.subtitle": "Watch how Reactify transforms regular videos into viral reaction content in minutes",
     "demo.description": "The demo video shows the entire process from selecting a video to the final result ready to upload",
     
+    // Results
+    "results.badge": "Sample Results",
+    "results.title": "See the Results",
+    "results.subtitle": "Real examples of videos generated with Reactify",
+    "results.description": "Check out hundreds of professionally generated reaction videos ready to upload",
+    "results.cta": "View All Samples",
+    
     // Problem Solution
     "problemsolution.title": "Common Problems",
     "problemsolution.title.highlight": "Content Creators Face",
@@ -409,6 +429,12 @@ const translations = {
     "features.bulk.desc": "Process multiple videos at once in one folder. Save time for mass production.",
     "features.ui.title": "Modern Interface",
     "features.ui.desc": "Modern UI with Dark/Light Mode. Easy navigation with Log, Video Info, Script & Settings tabs.",
+    "features.save.title": "Save Settings",
+    "features.save.desc": "Save your preferences and settings for reuse. No need to reconfigure every time.",
+    "features.bulkimage.title": "Bulk Image Generator",
+    "features.bulkimage.desc": "Generate hundreds of images per day for content needs. Perfect for mass content creation.",
+    "features.merge.title": "Merge Video & Photo",
+    "features.merge.desc": "Easily merge video with photo, photo with video, and photo with photo.",
     
     // Target Audience
     "audience.title": "Who Should",
